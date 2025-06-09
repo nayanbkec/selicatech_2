@@ -79,11 +79,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 dark:bg-dark-900/95 backdrop-blur-md shadow-lg py-2' 
-          : 'bg-transparent py-4'
+        isScrolled
+          ? "bg-white/95 dark:bg-dark-900/95 backdrop-blur-md shadow-lg py-2"
+          : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto container-padding">
@@ -91,12 +91,12 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 z-50">
             <Logo className="h-10 w-10" />
-            <span className={`text-xl font-bold transition-colors ${
-              isScrolled 
-                ? 'text-gray-900 dark:text-white' 
-                : 'text-white'
-            }`}>
-              TechSolutions
+            <span
+              className={`text-xl font-bold transition-colors ${
+                isScrolled ? "text-gray-900 dark:text-white" : "text-white"
+              }`}
+            >
+              SelicaTech
             </span>
           </Link>
 
@@ -113,16 +113,16 @@ const Header: React.FC = () => {
                     <button
                       className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                         location.pathname.startsWith(link.path)
-                          ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20'
+                          ? "text-primary-600 bg-primary-50 dark:bg-primary-900/20"
                           : isScrolled
-                          ? 'text-gray-700 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20'
-                          : 'text-white hover:text-primary-200'
+                          ? "text-gray-700 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                          : "text-white hover:text-primary-200"
                       }`}
                     >
                       {link.name}
                       <ChevronDown size={16} className="ml-1" />
                     </button>
-                    
+
                     <AnimatePresence>
                       {activeDropdown === link.name && (
                         <motion.div
@@ -151,10 +151,10 @@ const Header: React.FC = () => {
                     className={({ isActive }) =>
                       `px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                         isActive
-                          ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20'
+                          ? "text-[#2252CE] dark:text-white bg-primary-50 dark:bg-primary-900"
                           : isScrolled
-                          ? 'text-gray-700 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20'
-                          : 'text-white hover:text-primary-200'
+                          ? "text-gray-700 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                          : "text-white hover:text-primary-200"
                       }`
                     }
                   >
@@ -168,24 +168,28 @@ const Header: React.FC = () => {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
             {/* Search */}
-            <button className={`p-2 rounded-lg transition-colors ${
-              isScrolled
-                ? 'text-gray-600 dark:text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20'
-                : 'text-white hover:text-primary-200'
-            }`}>
+            <button
+              className={`p-2 rounded-lg transition-colors ${
+                isScrolled
+                  ? "text-gray-600 dark:text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                  : "text-white hover:text-primary-200"
+              }`}
+            >
               <Search size={20} />
             </button>
 
             {/* Language Switcher */}
             <div className="relative group">
-              <button className={`flex items-center p-2 rounded-lg transition-colors ${
-                isScrolled
-                  ? 'text-gray-600 dark:text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20'
-                  : 'text-white hover:text-primary-200'
-              }`}>
+              <button
+                className={`flex items-center p-2 rounded-lg transition-colors ${
+                  isScrolled
+                    ? "text-gray-600 dark:text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                    : "text-white hover:text-primary-200"
+                }`}
+              >
                 <Globe size={20} />
               </button>
-              
+
               <div className="absolute top-full right-0 mt-2 w-48 bg-white dark:bg-dark-800 rounded-xl shadow-xl border border-gray-100 dark:border-dark-700 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {languages.map((lang) => (
                   <button
@@ -193,8 +197,8 @@ const Header: React.FC = () => {
                     onClick={() => setLanguage(lang.code as any)}
                     className={`w-full flex items-center px-4 py-2 text-sm transition-colors ${
                       language === lang.code
-                        ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20'
-                        : 'text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20'
+                        ? "text-primary-600 bg-primary-50 dark:bg-primary-900/20"
+                        : "text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20"
                     }`}
                   >
                     <span className="mr-2">{lang.flag}</span>
@@ -209,11 +213,11 @@ const Header: React.FC = () => {
               onClick={toggleTheme}
               className={`p-2 rounded-lg transition-colors ${
                 isScrolled
-                  ? 'text-gray-600 dark:text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20'
-                  : 'text-white hover:text-primary-200'
+                  ? "text-gray-600 dark:text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                  : "text-white hover:text-primary-200"
               }`}
             >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
             </button>
 
             {/* CTA Button */}
@@ -225,9 +229,7 @@ const Header: React.FC = () => {
           {/* Mobile menu button */}
           <button
             className={`lg:hidden p-2 rounded-lg transition-colors z-50 ${
-              isScrolled
-                ? 'text-gray-600 dark:text-gray-400'
-                : 'text-white'
+              isScrolled ? "text-gray-600 dark:text-gray-400" : "text-white"
             }`}
             onClick={toggleMenu}
             aria-label="Toggle menu"
@@ -242,7 +244,7 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="lg:hidden bg-white dark:bg-dark-900 border-t border-gray-200 dark:border-dark-700 overflow-hidden"
@@ -257,19 +259,19 @@ const Header: React.FC = () => {
                         className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
                       >
                         {link.name}
-                        <ChevronDown 
-                          size={16} 
+                        <ChevronDown
+                          size={16}
                           className={`transition-transform ${
-                            activeDropdown === link.name ? 'rotate-180' : ''
-                          }`} 
+                            activeDropdown === link.name ? "rotate-180" : ""
+                          }`}
                         />
                       </button>
-                      
+
                       <AnimatePresence>
                         {activeDropdown === link.name && (
                           <motion.div
                             initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
+                            animate={{ opacity: 1, height: "auto" }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.2 }}
                             className="ml-4 mt-2 space-y-1 overflow-hidden"
@@ -293,8 +295,8 @@ const Header: React.FC = () => {
                       className={({ isActive }) =>
                         `block px-3 py-2 rounded-lg transition-colors ${
                           isActive
-                            ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20'
-                            : 'text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20'
+                            ? "text-primary-600 bg-primary-50 dark:bg-primary-900/20"
+                            : "text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20"
                         }`
                       }
                     >
@@ -303,20 +305,25 @@ const Header: React.FC = () => {
                   )}
                 </div>
               ))}
-              
+
               {/* Mobile Actions */}
               <div className="pt-4 border-t border-gray-200 dark:border-dark-700 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600 dark:text-gray-400">Theme</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    Theme
+                  </span>
                   <button
                     onClick={toggleTheme}
                     className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
                   >
-                    {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                    {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
                   </button>
                 </div>
-                
-                <Link to="/contact" className="btn btn-primary w-full justify-center">
+
+                <Link
+                  to="/contact"
+                  className="btn btn-primary w-full justify-center"
+                >
                   Get Quote
                 </Link>
               </div>

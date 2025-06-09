@@ -8,10 +8,10 @@ const BlogPostPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Blog Post - TechSolutions</title>
+        <title>Blog Post - SelicaTech</title>
         <meta name="description" content="Blog post content." />
       </Helmet>
-      
+
       <div className="pt-24 pb-16 min-h-screen">
         <div className="container mx-auto container-padding">
           <h1 className="text-4xl font-bold mb-8">Blog Post: {postId}</h1>

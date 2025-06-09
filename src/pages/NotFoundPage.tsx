@@ -8,8 +8,11 @@ const NotFoundPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Page Not Found - TechSolutions</title>
-        <meta name="description" content="The page you're looking for doesn't exist." />
+        <title>Page Not Found - SelicaTech</title>
+        <meta
+          name="description"
+          content="The page you're looking for doesn't exist."
+        />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -27,24 +30,24 @@ const NotFoundPage: React.FC = () => {
               Page Not Found
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-md mx-auto mb-8">
-              The page you are looking for might have been removed, had its name changed, 
-              or is temporarily unavailable.
+              The page you are looking for might have been removed, had its name
+              changed, or is temporarily unavailable.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/" 
-                className="btn btn-primary group"
-              >
+              <Link to="/" className="btn btn-primary group">
                 <Home size={18} className="mr-2" />
                 Back to Home
               </Link>
-              
-              <button 
+
+              <button
                 onClick={() => window.history.back()}
                 className="btn btn-outline group"
               >
-                <ArrowLeft size={18} className="mr-2 group-hover:-translate-x-1 transition-transform" />
+                <ArrowLeft
+                  size={18}
+                  className="mr-2 group-hover:-translate-x-1 transition-transform"
+                />
                 Go Back
               </button>
             </div>

@@ -5,10 +5,13 @@ const BlogPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Blog - TechSolutions</title>
-        <meta name="description" content="Latest insights and articles from our technology experts." />
+        <title>Blog - SelicaTech</title>
+        <meta
+          name="description"
+          content="Latest insights and articles from our technology experts."
+        />
       </Helmet>
-      
+
       <div className="pt-24 pb-16 min-h-screen">
         <div className="container mx-auto container-padding">
           <h1 className="text-4xl font-bold mb-8">Blog</h1>

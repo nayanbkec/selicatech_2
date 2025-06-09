@@ -90,16 +90,19 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - TechSolutions | Leading IT Company</title>
-        <meta 
-          name="description" 
-          content="Learn about TechSolutions - a leading IT company providing innovative software development, cloud solutions, and digital transformation services worldwide." 
+        <title>About Us - SelicaTech | Leading IT Company</title>
+        <meta
+          name="description"
+          content="Learn about SelicaTech - a leading IT company providing innovative software development, cloud solutions, and digital transformation services worldwide."
         />
-        <link rel="canonical" href="https://techsolutions.com/about" />
+        <link rel="canonical" href="https://SelicaTech.com/about" />
       </Helmet>
 
       {/* Hero Section */}
-      <section ref={heroRef} className="pt-24 pb-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <section
+        ref={heroRef}
+        className="pt-24 pb-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white"
+      >
         <div className="container mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -108,11 +111,12 @@ const AboutPage: React.FC = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About TechSolutions
+              About SelicaTech
             </h1>
             <p className="text-xl text-blue-100 leading-relaxed">
-              We are a leading IT company dedicated to transforming businesses through innovative 
-              technology solutions, expert development teams, and strategic digital transformation services.
+              We are a leading IT company dedicated to transforming businesses
+              through innovative technology solutions, expert development teams,
+              and strategic digital transformation services.
             </p>
           </motion.div>
         </div>
@@ -130,12 +134,16 @@ const AboutPage: React.FC = () => {
               <div className="card p-8">
                 <div className="flex items-center mb-6">
                   <Target className="text-primary-600 mr-4" size={32} />
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Our Mission</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    Our Mission
+                  </h2>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To empower businesses worldwide with innovative technology solutions that drive growth, 
-                  efficiency, and competitive advantage. We are committed to delivering exceptional value 
-                  through cutting-edge software development, strategic consulting, and reliable support.
+                  To empower businesses worldwide with innovative technology
+                  solutions that drive growth, efficiency, and competitive
+                  advantage. We are committed to delivering exceptional value
+                  through cutting-edge software development, strategic
+                  consulting, and reliable support.
                 </p>
               </div>
             </motion.div>
@@ -148,12 +156,16 @@ const AboutPage: React.FC = () => {
               <div className="card p-8">
                 <div className="flex items-center mb-6">
                   <Eye className="text-primary-600 mr-4" size={32} />
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Our Vision</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    Our Vision
+                  </h2>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To be the global leader in IT solutions, recognized for our innovation, quality, and 
-                  client success. We envision a future where technology seamlessly integrates with 
-                  business processes to create unprecedented opportunities for growth and transformation.
+                  To be the global leader in IT solutions, recognized for our
+                  innovation, quality, and client success. We envision a future
+                  where technology seamlessly integrates with business processes
+                  to create unprecedented opportunities for growth and
+                  transformation.
                 </p>
               </div>
             </motion.div>
@@ -162,7 +174,10 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Values */}
-      <section ref={valuesRef} className="section-padding bg-gray-50 dark:bg-dark-800">
+      <section
+        ref={valuesRef}
+        className="section-padding bg-gray-50 dark:bg-dark-800"
+      >
         <div className="container mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -174,7 +189,8 @@ const AboutPage: React.FC = () => {
               Our Core Values
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              These principles guide everything we do and shape our culture of excellence.
+              These principles guide everything we do and shape our culture of
+              excellence.
             </p>
           </motion.div>
 
@@ -218,7 +234,8 @@ const AboutPage: React.FC = () => {
               Our Achievements
             </h2>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Numbers that reflect our commitment to excellence and client success.
+              Numbers that reflect our commitment to excellence and client
+              success.
             </p>
           </motion.div>
 
@@ -234,9 +251,7 @@ const AboutPage: React.FC = () => {
                 <div className="text-4xl md:text-5xl font-bold mb-2">
                   {achievement.number}
                 </div>
-                <div className="text-blue-100">
-                  {achievement.label}
-                </div>
+                <div className="text-blue-100">{achievement.label}</div>
               </motion.div>
             ))}
           </div>
@@ -244,7 +259,10 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Leadership Team */}
-      <section ref={teamRef} className="section-padding bg-white dark:bg-dark-900">
+      <section
+        ref={teamRef}
+        className="section-padding bg-white dark:bg-dark-900"
+      >
         <div className="container mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -256,7 +274,8 @@ const AboutPage: React.FC = () => {
               Leadership Team
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Meet the experienced professionals who guide our vision and drive our success.
+              Meet the experienced professionals who guide our vision and drive
+              our success.
             </p>
           </motion.div>
 
@@ -301,20 +320,21 @@ const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
-                Why Choose TechSolutions?
+                Why Choose SelicaTech?
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                We combine technical expertise with business acumen to deliver solutions that drive real results.
+                We combine technical expertise with business acumen to deliver
+                solutions that drive real results.
               </p>
 
               <div className="space-y-4">
                 {[
-                  'Proven track record with 500+ successful projects',
-                  'Expert team with diverse technical skills',
-                  'Agile development methodology',
-                  'Comprehensive post-launch support',
-                  'Competitive pricing and transparent communication',
-                  'Global presence with local expertise',
+                  "Proven track record with 500+ successful projects",
+                  "Expert team with diverse technical skills",
+                  "Agile development methodology",
+                  "Comprehensive post-launch support",
+                  "Competitive pricing and transparent communication",
+                  "Global presence with local expertise",
                 ].map((point, index) => (
                   <motion.div
                     key={index}
@@ -323,8 +343,13 @@ const AboutPage: React.FC = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     className="flex items-center"
                   >
-                    <CheckCircle className="text-secondary-500 mr-3 flex-shrink-0" size={20} />
-                    <span className="text-gray-700 dark:text-gray-300">{point}</span>
+                    <CheckCircle
+                      className="text-secondary-500 mr-3 flex-shrink-0"
+                      size={20}
+                    />
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {point}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -345,8 +370,12 @@ const AboutPage: React.FC = () => {
                 <div className="flex items-center space-x-4">
                   <Award className="text-primary-600" size={32} />
                   <div>
-                    <div className="font-bold text-gray-900 dark:text-white">ISO 27001</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Certified</div>
+                    <div className="font-bold text-gray-900 dark:text-white">
+                      ISO 27001
+                    </div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      Certified
+                    </div>
                   </div>
                 </div>
               </div>

@@ -35,7 +35,7 @@ const LiveChat: React.FC = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-8 w-80 h-96 bg-white dark:bg-dark-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-dark-700 z-50 flex flex-col"
+            className="fixed bottom-32 right-8 w-80 h-96 bg-white dark:bg-dark-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-dark-700 z-50 flex flex-col"
           >
             {/* Header */}
             <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-4 rounded-t-2xl flex items-center justify-between">
@@ -56,7 +56,9 @@ const LiveChat: React.FC = () => {
               <div className="space-y-4">
                 <div className="bg-gray-100 dark:bg-dark-700 rounded-lg p-3 max-w-xs">
                   <p className="text-sm">Hello! How can we help you today?</p>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">Support Team</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">
+                    Support Team
+                  </span>
                 </div>
               </div>
             </div>

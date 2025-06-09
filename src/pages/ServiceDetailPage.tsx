@@ -94,9 +94,12 @@ const ServiceDetailPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{service.title} - TechSolutions</title>
+        <title>{service.title} - SelicaTech</title>
         <meta name="description" content={service.description} />
-        <link rel="canonical" href={`https://techsolutions.com/services/${serviceId}`} />
+        <link
+          rel="canonical"
+          href={`https://SelicaTech.com/services/${serviceId}`}
+        />
       </Helmet>
 
       {/* Hero Section */}
@@ -116,7 +119,10 @@ const ServiceDetailPage: React.FC = () => {
                 {service.longDescription}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact" className="btn bg-white text-primary-700 hover:bg-gray-100">
+                <Link
+                  to="/contact"
+                  className="btn bg-white text-primary-700 hover:bg-gray-100"
+                >
                   Get Started
                 </Link>
                 <button className="btn bg-transparent border-2 border-white text-white hover:bg-white/10">
@@ -174,8 +180,13 @@ const ServiceDetailPage: React.FC = () => {
               <div className="space-y-4">
                 {service.features.map((feature, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="text-secondary-500 mr-3 flex-shrink-0" size={20} />
-                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                    <CheckCircle
+                      className="text-secondary-500 mr-3 flex-shrink-0"
+                      size={20}
+                    />
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {feature}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -192,8 +203,13 @@ const ServiceDetailPage: React.FC = () => {
               <div className="space-y-4">
                 {service.benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center">
-                    <Star className="text-accent-500 mr-3 flex-shrink-0" size={20} />
-                    <span className="text-gray-700 dark:text-gray-300">{benefit}</span>
+                    <Star
+                      className="text-accent-500 mr-3 flex-shrink-0"
+                      size={20}
+                    />
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {benefit}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -215,7 +231,8 @@ const ServiceDetailPage: React.FC = () => {
               Our Process
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We follow a proven methodology to ensure successful project delivery.
+              We follow a proven methodology to ensure successful project
+              delivery.
             </p>
           </motion.div>
 
@@ -256,7 +273,8 @@ const ServiceDetailPage: React.FC = () => {
               Technologies We Use
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We leverage the latest technologies to build robust and scalable solutions.
+              We leverage the latest technologies to build robust and scalable
+              solutions.
             </p>
           </motion.div>
 
@@ -288,13 +306,20 @@ const ServiceDetailPage: React.FC = () => {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Let's discuss your requirements and create a solution that drives your business forward.
+              Let's discuss your requirements and create a solution that drives
+              your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn bg-white text-primary-700 hover:bg-gray-100">
+              <Link
+                to="/contact"
+                className="btn bg-white text-primary-700 hover:bg-gray-100"
+              >
                 Get Free Consultation
               </Link>
-              <Link to="/case-studies" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10">
+              <Link
+                to="/case-studies"
+                className="btn bg-transparent border-2 border-white text-white hover:bg-white/10"
+              >
                 View Case Studies
               </Link>
             </div>

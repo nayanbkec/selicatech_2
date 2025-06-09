@@ -5,10 +5,13 @@ const CaseStudiesPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Case Studies - TechSolutions</title>
-        <meta name="description" content="Success stories and case studies from our projects." />
+        <title>Case Studies - SelicaTech</title>
+        <meta
+          name="description"
+          content="Success stories and case studies from our projects."
+        />
       </Helmet>
-      
+
       <div className="pt-24 pb-16 min-h-screen">
         <div className="container mx-auto container-padding">
           <h1 className="text-4xl font-bold mb-8">Case Studies</h1>

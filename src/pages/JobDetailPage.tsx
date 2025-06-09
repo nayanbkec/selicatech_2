@@ -8,10 +8,13 @@ const JobDetailPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Job Detail - TechSolutions</title>
-        <meta name="description" content="Job details and application information." />
+        <title>Job Detail - SelicaTech</title>
+        <meta
+          name="description"
+          content="Job details and application information."
+        />
       </Helmet>
-      
+
       <div className="pt-24 pb-16 min-h-screen">
         <div className="container mx-auto container-padding">
           <h1 className="text-4xl font-bold mb-8">Job: {jobId}</h1>

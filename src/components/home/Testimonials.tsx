@@ -13,38 +13,46 @@ const Testimonials: React.FC = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      position: 'CEO, TechCorp',
-      company: 'TechCorp',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
-      content: 'TechSolutions transformed our entire digital infrastructure. Their expertise in cloud migration and AI implementation has given us a competitive edge in the market.',
+      name: "Sarah Johnson",
+      position: "CEO, TechCorp",
+      company: "TechCorp",
+      image:
+        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2",
+      content:
+        "SelicaTech transformed our entire digital infrastructure. Their expertise in cloud migration and AI implementation has given us a competitive edge in the market.",
       rating: 5,
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      position: 'CTO, InnovateLab',
-      company: 'InnovateLab',
-      image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
-      content: 'The team delivered an exceptional e-commerce platform that exceeded our expectations. Their attention to detail and technical expertise is unmatched.',
+      name: "Michael Chen",
+      position: "CTO, InnovateLab",
+      company: "InnovateLab",
+      image:
+        "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2",
+      content:
+        "The team delivered an exceptional e-commerce platform that exceeded our expectations. Their attention to detail and technical expertise is unmatched.",
       rating: 5,
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
-      position: 'Director of Operations, HealthPlus',
-      company: 'HealthPlus',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
-      content: 'Our healthcare management system has revolutionized how we serve patients. The solution is intuitive, secure, and perfectly tailored to our needs.',
+      name: "Emily Rodriguez",
+      position: "Director of Operations, HealthPlus",
+      company: "HealthPlus",
+      image:
+        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2",
+      content:
+        "Our healthcare management system has revolutionized how we serve patients. The solution is intuitive, secure, and perfectly tailored to our needs.",
       rating: 5,
     },
     {
       id: 4,
-      name: 'David Kim',
-      position: 'Founder, EduTech Solutions',
-      company: 'EduTech Solutions',
-      image: 'https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2',
-      content: 'The learning management system they built has transformed online education for our students. Engagement and completion rates have increased significantly.',
+      name: "David Kim",
+      position: "Founder, EduTech Solutions",
+      company: "EduTech Solutions",
+      image:
+        "https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2",
+      content:
+        "The learning management system they built has transformed online education for our students. Engagement and completion rates have increased significantly.",
       rating: 5,
     },
   ];
@@ -54,7 +62,9 @@ const Testimonials: React.FC = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   return (
@@ -70,8 +80,8 @@ const Testimonials: React.FC = () => {
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about 
-            working with TechSolutions.
+            Don't just take our word for it. Here's what our clients have to say
+            about working with SelicaTech.
           </p>
         </motion.div>
 
@@ -90,10 +100,14 @@ const Testimonials: React.FC = () => {
                 <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   "{testimonials[currentIndex].content}"
                 </p>
-                
+
                 <div className="flex justify-center mb-6">
                   {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                    <Star key={i} size={20} className="text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      size={20}
+                      className="text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
               </div>
@@ -142,8 +156,8 @@ const Testimonials: React.FC = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
                   index === currentIndex
-                    ? 'bg-primary-600'
-                    : 'bg-gray-300 dark:bg-gray-600'
+                    ? "bg-primary-600"
+                    : "bg-gray-300 dark:bg-gray-600"
                 }`}
               />
             ))}

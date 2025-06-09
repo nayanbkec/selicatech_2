@@ -8,10 +8,10 @@ const CaseStudyDetailPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Case Study Detail - TechSolutions</title>
+        <title>Case Study Detail - SelicaTech</title>
         <meta name="description" content="Detailed case study information." />
       </Helmet>
-      
+
       <div className="pt-24 pb-16 min-h-screen">
         <div className="container mx-auto container-padding">
           <h1 className="text-4xl font-bold mb-8">Case Study: {caseStudyId}</h1>

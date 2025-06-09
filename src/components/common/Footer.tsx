@@ -50,31 +50,44 @@ const Footer: React.FC = () => {
   };
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, url: 'https://facebook.com/techsolutions' },
-    { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/techsolutions' },
-    { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/company/techsolutions' },
-    { name: 'Instagram', icon: Instagram, url: 'https://instagram.com/techsolutions' },
-    { name: 'YouTube', icon: Youtube, url: 'https://youtube.com/techsolutions' },
+    {
+      name: "Facebook",
+      icon: Facebook,
+      url: "https://facebook.com/SelicaTech",
+    },
+    { name: "Twitter", icon: Twitter, url: "https://twitter.com/SelicaTech" },
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      url: "https://linkedin.com/company/SelicaTech",
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      url: "https://instagram.com/SelicaTech",
+    },
+    { name: "YouTube", icon: Youtube, url: "https://youtube.com/SelicaTech" },
   ];
 
   const offices = [
     {
-      city: 'San Francisco',
-      address: '123 Tech Street, CA 94105',
-      phone: '+1 (555) 123-4567',
-      email: 'sf@techsolutions.com',
+      city: "Bengaluru",
+      address:
+        "46/4, Hosur Rd, Kudlu Gate, Krishna Reddy Industrial Area, H.S, R Extension, 560068",
+      phone: "+91 6363 472 891",
+      email: "contact@selicatech.com",
     },
     {
-      city: 'New York',
-      address: '456 Innovation Ave, NY 10001',
-      phone: '+1 (555) 987-6543',
-      email: 'ny@techsolutions.com',
+      city: "New York",
+      address: "456 Innovation Ave, NY 10001",
+      phone: "+1 (555) 987-6543",
+      email: "ny@SelicaTech.com",
     },
     {
-      city: 'London',
-      address: '789 Digital Lane, EC1A 1BB',
-      phone: '+44 20 1234 5678',
-      email: 'london@techsolutions.com',
+      city: "London",
+      address: "789 Digital Lane, EC1A 1BB",
+      phone: "+44 20 1234 5678",
+      email: "london@SelicaTech.com",
     },
   ];
 
@@ -87,7 +100,8 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
               <p className="text-gray-400">
-                Get the latest insights on technology trends, industry news, and our company updates.
+                Get the latest insights on technology trends, industry news, and
+                our company updates.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -112,13 +126,14 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <Logo className="h-10 w-10" />
-              <span className="text-xl font-bold">TechSolutions</span>
+              <span className="text-xl font-bold">SelicaTech</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Leading IT company providing innovative software development, cloud solutions, 
-              AI services, and digital transformation for global businesses.
+              Leading IT company providing innovative software development,
+              cloud solutions, AI services, and digital transformation for
+              global businesses.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4">
               {socialLinks.map((social) => {
@@ -141,7 +156,9 @@ const Footer: React.FC = () => {
 
           {/* Company Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">{t('footer.company')}</h4>
+            <h4 className="text-lg font-semibold mb-6">
+              {t("footer.company")}
+            </h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.path}>
@@ -150,7 +167,10 @@ const Footer: React.FC = () => {
                     className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
                   >
                     {link.name}
-                    <ArrowRight size={14} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight
+                      size={14}
+                      className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
                   </Link>
                 </li>
               ))}
@@ -159,7 +179,9 @@ const Footer: React.FC = () => {
 
           {/* Services Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">{t('footer.services')}</h4>
+            <h4 className="text-lg font-semibold mb-6">
+              {t("footer.services")}
+            </h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.path}>
@@ -168,7 +190,10 @@ const Footer: React.FC = () => {
                     className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
                   >
                     {link.name}
-                    <ArrowRight size={14} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight
+                      size={14}
+                      className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
                   </Link>
                 </li>
               ))}
@@ -186,7 +211,10 @@ const Footer: React.FC = () => {
                     className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
                   >
                     {link.name}
-                    <ArrowRight size={14} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight
+                      size={14}
+                      className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
                   </Link>
                 </li>
               ))}
@@ -195,7 +223,9 @@ const Footer: React.FC = () => {
 
           {/* Resources Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">{t('footer.resources')}</h4>
+            <h4 className="text-lg font-semibold mb-6">
+              {t("footer.resources")}
+            </h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.path}>
@@ -204,7 +234,10 @@ const Footer: React.FC = () => {
                     className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
                   >
                     {link.name}
-                    <ArrowRight size={14} className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight
+                      size={14}
+                      className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
                   </Link>
                 </li>
               ))}
@@ -221,18 +254,33 @@ const Footer: React.FC = () => {
                 <h5 className="font-semibold mb-4">{office.city}</h5>
                 <div className="space-y-3 text-sm text-gray-400">
                   <div className="flex items-start">
-                    <MapPin size={16} className="mr-2 mt-0.5 text-primary-500 flex-shrink-0" />
+                    <MapPin
+                      size={16}
+                      className="mr-2 mt-0.5 text-primary-500 flex-shrink-0"
+                    />
                     <span>{office.address}</span>
                   </div>
                   <div className="flex items-center">
-                    <Phone size={16} className="mr-2 text-primary-500 flex-shrink-0" />
-                    <a href={`tel:${office.phone}`} className="hover:text-white transition-colors">
+                    <Phone
+                      size={16}
+                      className="mr-2 text-primary-500 flex-shrink-0"
+                    />
+                    <a
+                      href={`tel:${office.phone}`}
+                      className="hover:text-white transition-colors"
+                    >
                       {office.phone}
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <Mail size={16} className="mr-2 text-primary-500 flex-shrink-0" />
-                    <a href={`mailto:${office.email}`} className="hover:text-white transition-colors">
+                    <Mail
+                      size={16}
+                      className="mr-2 text-primary-500 flex-shrink-0"
+                    />
+                    <a
+                      href={`mailto:${office.email}`}
+                      className="hover:text-white transition-colors"
+                    >
                       {office.email}
                     </a>
                   </div>
@@ -248,16 +296,25 @@ const Footer: React.FC = () => {
         <div className="container mx-auto container-padding py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} TechSolutions. {t('footer.rights')}
+              © {new Date().getFullYear()} SelicaTech. {t("footer.rights")}
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">
+              <Link
+                to="/privacy"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">
+              <Link
+                to="/terms"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Terms of Service
               </Link>
-              <Link to="/cookies" className="text-gray-400 hover:text-white transition-colors">
+              <Link
+                to="/cookies"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Cookie Policy
               </Link>
             </div>

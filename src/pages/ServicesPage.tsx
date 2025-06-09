@@ -119,12 +119,12 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services - TechSolutions | IT Solutions & Development</title>
-        <meta 
-          name="description" 
-          content="Comprehensive IT services including software development, cloud solutions, AI/ML, mobile development, DevOps, and data engineering. Transform your business with our expert team." 
+        <title>Our Services - SelicaTech | IT Solutions & Development</title>
+        <meta
+          name="description"
+          content="Comprehensive IT services including software development, cloud solutions, AI/ML, mobile development, DevOps, and data engineering. Transform your business with our expert team."
         />
-        <link rel="canonical" href="https://techsolutions.com/services" />
+        <link rel="canonical" href="https://SelicaTech.com/services" />
       </Helmet>
 
       {/* Hero Section */}
@@ -140,8 +140,9 @@ const ServicesPage: React.FC = () => {
               Our Services
             </h1>
             <p className="text-xl text-blue-100 leading-relaxed">
-              Comprehensive IT solutions designed to accelerate your digital transformation 
-              and drive business growth through innovative technology.
+              Comprehensive IT solutions designed to accelerate your digital
+              transformation and drive business growth through innovative
+              technology.
             </p>
           </motion.div>
         </div>
@@ -154,7 +155,7 @@ const ServicesPage: React.FC = () => {
             {services.map((service, index) => {
               const Icon = service.icon;
               const isEven = index % 2 === 0;
-              
+
               return (
                 <motion.div
                   key={service.title}
@@ -162,11 +163,13 @@ const ServicesPage: React.FC = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                    !isEven ? 'lg:grid-flow-col-dense' : ''
+                    !isEven ? "lg:grid-flow-col-dense" : ""
                   }`}
                 >
                   {/* Content */}
-                  <div className={isEven ? 'lg:pr-8' : 'lg:pl-8 lg:col-start-2'}>
+                  <div
+                    className={isEven ? "lg:pr-8" : "lg:pl-8 lg:col-start-2"}
+                  >
                     <div className="flex items-center mb-6">
                       <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mr-4">
                         <Icon size={32} className="text-white" />
@@ -187,7 +190,10 @@ const ServicesPage: React.FC = () => {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {service.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center">
-                            <CheckCircle className="text-secondary-500 mr-2 flex-shrink-0" size={16} />
+                            <CheckCircle
+                              className="text-secondary-500 mr-2 flex-shrink-0"
+                              size={16}
+                            />
                             <span className="text-gray-600 dark:text-gray-300 text-sm">
                               {feature}
                             </span>
@@ -212,17 +218,19 @@ const ServicesPage: React.FC = () => {
                       </div>
                     </div>
 
-                    <Link
-                      to={service.link}
-                      className="btn btn-primary group"
-                    >
+                    <Link to={service.link} className="btn btn-primary group">
                       Learn More
-                      <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight
+                        size={20}
+                        className="ml-2 group-hover:translate-x-1 transition-transform"
+                      />
                     </Link>
                   </div>
 
                   {/* Image */}
-                  <div className={isEven ? 'lg:pl-8' : 'lg:pr-8 lg:col-start-1'}>
+                  <div
+                    className={isEven ? "lg:pl-8" : "lg:pr-8 lg:col-start-1"}
+                  >
                     <div className="relative">
                       <img
                         src={service.image}
@@ -252,7 +260,8 @@ const ServicesPage: React.FC = () => {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-              Let's discuss your project requirements and how our services can help you achieve your goals.
+              Let's discuss your project requirements and how our services can
+              help you achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="btn btn-primary">

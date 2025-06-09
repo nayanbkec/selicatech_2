@@ -14,16 +14,16 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>TechSolutions - Innovative IT Solutions & Services</title>
-        <meta 
-          name="description" 
-          content="Leading IT company providing innovative software development, cloud solutions, AI services, and digital transformation for global businesses." 
+        <title>SelicaTech - Innovative IT Solutions & Services</title>
+        <meta
+          name="description"
+          content="Leading IT company providing innovative software development, cloud solutions, AI services, and digital transformation for global businesses."
         />
-        <meta 
-          name="keywords" 
-          content="IT solutions, software development, cloud services, AI, digital transformation, ERP, CRM" 
+        <meta
+          name="keywords"
+          content="IT solutions, software development, cloud services, AI, digital transformation, ERP, CRM"
         />
-        <link rel="canonical" href="https://techsolutions.com/" />
+        <link rel="canonical" href="https://SelicaTech.com/" />
       </Helmet>
 
       <div className="space-y-section">
