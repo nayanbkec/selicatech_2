@@ -1,0 +1,175 @@
+import React from 'react';
+import { Heart, Pill, Brain, Stethoscope, FlaskConical, Eye, Thermometer, Bone } from 'lucide-react';
+import { Product } from '../types';
+
+// Product Categories
+export const productCategories = [
+  {
+    id: 'cardio',
+    name: 'Cardiovascular',
+    icon: <Heart size={24} />,
+  },
+  {
+    id: 'neuro',
+    name: 'Neurology',
+    icon: <Brain size={24} />,
+  },
+  {
+    id: 'immuno',
+    name: 'Immunology',
+    icon: <Pill size={24} />,
+  },
+  {
+    id: 'general',
+    name: 'General Medicine',
+    icon: <Stethoscope size={24} />,
+  },
+  {
+    id: 'oncology',
+    name: 'Oncology',
+    icon: <FlaskConical size={24} />,
+  },
+  {
+    id: 'ophtha',
+    name: 'Ophthalmology',
+    icon: <Eye size={24} />,
+  },
+  {
+    id: 'vaccine',
+    name: 'Vaccines',
+    icon: <Thermometer size={24} />,
+  },
+  {
+    id: 'ortho',
+    name: 'Orthopedics',
+    icon: <Bone size={24} />,
+  },
+];
+
+// All Products
+export const allProducts: Product[] = [
+  {
+    id: 1,
+    name: 'CardioGuard Plus',
+    description: 'Advanced medication for cardiovascular health management with improved bioavailability.',
+    longDescription: 'CardioGuard Plus represents a breakthrough in cardiovascular treatment, offering superior efficacy with fewer side effects. Its unique formulation ensures optimal drug delivery and sustained therapeutic effect.',
+    image: 'https://images.pexels.com/photos/4047184/pexels-photo-4047184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Cardiovascular',
+    categoryId: 'cardio',
+    dosage: '10mg, once daily',
+    releaseDate: 'Jan 2023',
+  },
+  {
+    id: 2,
+    name: 'NeuroBalance',
+    description: 'Innovative treatment for neurological disorders targeting specific neural pathways.',
+    image: 'https://images.pexels.com/photos/3683102/pexels-photo-3683102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Neurology',
+    categoryId: 'neuro',
+    dosage: '25mg, twice daily',
+    releaseDate: 'Mar 2023',
+  },
+  {
+    id: 3,
+    name: 'ImmunoShield',
+    description: 'Next-generation immunotherapy designed to enhance the body\'s natural defense mechanisms.',
+    image: 'https://images.pexels.com/photos/5863399/pexels-photo-5863399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Immunology',
+    categoryId: 'immuno',
+    dosage: '50mg, once daily',
+    releaseDate: 'Nov 2022',
+  },
+  {
+    id: 4,
+    name: 'ThermoFlu Relief',
+    description: 'Comprehensive cold and flu treatment with anti-inflammatory and antipyretic properties.',
+    image: 'https://images.pexels.com/photos/593451/pexels-photo-593451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'General Medicine',
+    categoryId: 'general',
+    dosage: '500mg, every 6 hours',
+    releaseDate: 'Sep 2022',
+  },
+  {
+    id: 5,
+    name: 'OncoTarget',
+    description: 'Targeted therapy for specific cancer types with reduced systemic toxicity.',
+    image: 'https://images.pexels.com/photos/360622/pexels-photo-360622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Oncology',
+    categoryId: 'oncology',
+    dosage: '100mg, once daily',
+    releaseDate: 'Feb 2023',
+  },
+  {
+    id: 6,
+    name: 'OptiClear',
+    description: 'Advanced ophthalmic solution for dry eye syndrome and corneal protection.',
+    image: 'https://images.pexels.com/photos/5699514/pexels-photo-5699514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Ophthalmology',
+    categoryId: 'ophtha',
+    dosage: '1-2 drops, 3 times daily',
+    releaseDate: 'Apr 2023',
+  },
+  {
+    id: 7,
+    name: 'FluGuard',
+    description: 'Seasonal influenza vaccine with enhanced coverage against multiple virus strains.',
+    image: 'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Vaccines',
+    categoryId: 'vaccine',
+    dosage: '0.5mL, annual',
+    releaseDate: 'Oct 2022',
+  },
+  {
+    id: 8,
+    name: 'JointRenew',
+    description: 'Comprehensive therapy for joint inflammation and pain with tissue regeneration support.',
+    image: 'https://images.pexels.com/photos/4506106/pexels-photo-4506106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Orthopedics',
+    categoryId: 'ortho',
+    dosage: '750mg, twice daily',
+    releaseDate: 'May 2023',
+  },
+  {
+    id: 9,
+    name: 'CardioRhythm',
+    description: 'Specialized treatment for arrhythmias with improved cardiac function support.',
+    image: 'https://images.pexels.com/photos/3683098/pexels-photo-3683098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Cardiovascular',
+    categoryId: 'cardio',
+    dosage: '5mg, twice daily',
+    releaseDate: 'Jun 2023',
+  },
+  {
+    id: 10,
+    name: 'NeuroCognitive',
+    description: 'Innovative medication for cognitive enhancement and neuroprotection.',
+    image: 'https://images.pexels.com/photos/3683107/pexels-photo-3683107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Neurology',
+    categoryId: 'neuro',
+    dosage: '15mg, once daily',
+    releaseDate: 'Jul 2023',
+  },
+  {
+    id: 11,
+    name: 'ImmunoDefense',
+    description: 'Advanced immunomodulator for chronic autoimmune conditions.',
+    image: 'https://images.pexels.com/photos/3683051/pexels-photo-3683051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'Immunology',
+    categoryId: 'immuno',
+    dosage: '75mg, once daily',
+    releaseDate: 'Aug 2023',
+  },
+  {
+    id: 12,
+    name: 'PainRelief Plus',
+    description: 'Comprehensive analgesic with multiple mechanisms of action for enhanced pain management.',
+    image: 'https://images.pexels.com/photos/139398/himalayas-myanmar-himalayan-range-tibetan-mountains-139398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'General Medicine',
+    categoryId: 'general',
+    dosage: '250mg, every 8 hours',
+    releaseDate: 'Dec 2022',
+  },
+];
+
+// Featured Products (subset of all products)
+export const featuredProducts = allProducts.slice(0, 6);
