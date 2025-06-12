@@ -10,70 +10,379 @@ const ServiceDetailPage: React.FC = () => {
 
   // This would typically come from an API or database
   const serviceData = {
-    'software-development': {
-      title: 'Software Development',
-      description: 'Custom software solutions built with cutting-edge technologies and best practices.',
-      longDescription: 'Our software development services encompass the entire development lifecycle, from initial concept and design to deployment and ongoing maintenance. We specialize in creating scalable, secure, and user-friendly applications that drive business growth and operational efficiency.',
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    "software-development": {
+      title: "Software Development",
+      description:
+        "Custom software solutions built with cutting-edge technologies and best practices.",
+      longDescription:
+        "Our software development services encompass the entire development lifecycle, from initial concept and design to deployment and ongoing maintenance. We specialize in creating scalable, secure, and user-friendly applications that drive business growth and operational efficiency.",
+      image:
+        "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       features: [
-        'Custom Web Application Development',
-        'Enterprise Software Solutions',
-        'API Development & Integration',
-        'Legacy System Modernization',
-        'Progressive Web Apps (PWA)',
-        'Microservices Architecture',
-        'Database Design & Optimization',
-        'Third-party Integrations'
+        "Custom Web Application Development",
+        "Enterprise Software Solutions",
+        "API Development & Integration",
+        "Legacy System Modernization",
+        "Progressive Web Apps (PWA)",
+        "Microservices Architecture",
+        "Database Design & Optimization",
+        "Third-party Integrations",
       ],
       benefits: [
-        'Increased operational efficiency',
-        'Reduced manual processes',
-        'Improved data accuracy',
-        'Enhanced user experience',
-        'Scalable architecture',
-        'Cost-effective solutions'
+        "Increased operational efficiency",
+        "Reduced manual processes",
+        "Improved data accuracy",
+        "Enhanced user experience",
+        "Scalable architecture",
+        "Cost-effective solutions",
       ],
       process: [
         {
           step: 1,
-          title: 'Discovery & Planning',
-          description: 'We analyze your requirements and create a comprehensive project plan.'
+          title: "Discovery & Planning",
+          description:
+            "We analyze your requirements and create a comprehensive project plan.",
         },
         {
           step: 2,
-          title: 'Design & Architecture',
-          description: 'Our team designs the system architecture and user interface.'
+          title: "Design & Architecture",
+          description:
+            "Our team designs the system architecture and user interface.",
         },
         {
           step: 3,
-          title: 'Development',
-          description: 'Agile development with regular updates and feedback cycles.'
+          title: "Development",
+          description:
+            "Agile development with regular updates and feedback cycles.",
         },
         {
           step: 4,
-          title: 'Testing & QA',
-          description: 'Comprehensive testing to ensure quality and performance.'
+          title: "Testing & QA",
+          description:
+            "Comprehensive manual testing, automation testing, and performance testing to ensure quality and reliability.",
         },
         {
           step: 5,
-          title: 'Deployment',
-          description: 'Smooth deployment with minimal downtime.'
+          title: "Deployment",
+          description: "Smooth deployment with minimal downtime.",
         },
         {
           step: 6,
-          title: 'Support & Maintenance',
-          description: 'Ongoing support and regular updates.'
-        }
+          title: "Support & Maintenance",
+          description: "Ongoing support and regular updates.",
+        },
       ],
-      technologies: ['React', 'Node.js', 'Python', 'Java', '.NET', 'PHP', 'MongoDB', 'PostgreSQL'],
+      technologies: [
+        "React",
+        "Node.js",
+        "Python",
+        "Java",
+        ".NET",
+        "PHP",
+        "MongoDB",
+        "PostgreSQL",
+      ],
       stats: [
-        { number: '200+', label: 'Projects Delivered' },
-        { number: '98%', label: 'Client Satisfaction' },
-        { number: '50+', label: 'Technologies' },
-        { number: '24/7', label: 'Support' }
-      ]
-    }
-    // Add more service data as needed
+        { number: "200+", label: "Projects Delivered" },
+        { number: "98%", label: "Client Satisfaction" },
+        { number: "50+", label: "Technologies" },
+        { number: "24/7", label: "Support" },
+      ],
+    },
+    "cloud-solutions": {
+      title: "Cloud Solutions",
+      description:
+        "Scalable cloud infrastructure and migration services for modern businesses.",
+      longDescription:
+        "Our Cloud Solutions empower your business with scalable, secure, and cost-effective cloud infrastructure. We specialize in seamless cloud migration, robust architecture design, and ongoing optimization to ensure your business leverages the full potential of AWS, Azure, or Google Cloud. Our team ensures compliance, security, and operational efficiency at every step.",
+      image:
+        "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      features: [
+        "Cloud Migration Strategy",
+        "AWS/Azure/GCP Implementation",
+        "Serverless Architecture",
+        "Cloud Security & Compliance",
+        "DevOps & CI/CD Pipelines",
+        "Cloud Cost Optimization",
+      ],
+      benefits: [
+        "Seamless migration with minimal downtime",
+        "Enhanced scalability and flexibility",
+        "Improved security and compliance",
+        "Reduced infrastructure costs",
+        "Faster deployment cycles",
+        "Expert support and monitoring",
+      ],
+      process: [
+        {
+          step: 1,
+          title: "Assessment & Planning",
+          description:
+            "We evaluate your current infrastructure and define a tailored cloud migration strategy.",
+        },
+        {
+          step: 2,
+          title: "Architecture Design",
+          description:
+            "Our experts design a scalable and secure cloud architecture aligned with your business goals.",
+        },
+        {
+          step: 3,
+          title: "Migration & Implementation",
+          description:
+            "We execute the migration and implement cloud services with minimal disruption.",
+        },
+        {
+          step: 4,
+          title: "Optimization & Automation",
+          description:
+            "Continuous optimization and automation for performance, security, and cost savings.",
+        },
+        {
+          step: 5,
+          title: "Monitoring & Support",
+          description:
+            "Ongoing monitoring, support, and compliance management for your cloud environment.",
+        },
+      ],
+      technologies: [
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+      ],
+      stats: [
+        { number: "100+", label: "Cloud Migrations" },
+        { number: "99.99%", label: "Uptime Achieved" },
+        { number: "30%", label: "Average Cost Savings" },
+        { number: "24/7", label: "Cloud Support" },
+      ],
+    },
+    // ...existing code...
+    "ai-ml": {
+      title: "AI & Machine Learning",
+      description:
+        "Intelligent solutions powered by artificial intelligence and machine learning.",
+      longDescription:
+        "Our AI & Machine Learning services deliver intelligent solutions that transform your business. From predictive analytics and natural language processing to computer vision and automation, we leverage advanced algorithms and data-driven insights to solve complex challenges and unlock new opportunities.",
+      image:
+        "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      features: [
+        "Predictive Analytics",
+        "Natural Language Processing",
+        "Computer Vision Solutions",
+        "Chatbots & Virtual Assistants",
+        "Recommendation Systems",
+        "Process Automation",
+      ],
+      benefits: [
+        "Data-driven decision making",
+        "Enhanced customer experiences",
+        "Automated business processes",
+        "Improved operational efficiency",
+        "Competitive business insights",
+        "Scalable AI-powered solutions",
+      ],
+      process: [
+        {
+          step: 1,
+          title: "Discovery & Data Assessment",
+          description:
+            "We analyze your business needs and assess available data sources.",
+        },
+        {
+          step: 2,
+          title: "Model Design & Prototyping",
+          description:
+            "Our experts design and prototype AI/ML models tailored to your objectives.",
+        },
+        {
+          step: 3,
+          title: "Development & Training",
+          description:
+            "We develop, train, and validate models using industry best practices.",
+        },
+        {
+          step: 4,
+          title: "Integration & Deployment",
+          description:
+            "Seamless integration of AI/ML solutions into your existing systems.",
+        },
+        {
+          step: 5,
+          title: "Monitoring & Optimization",
+          description:
+            "Continuous monitoring and optimization to ensure peak performance.",
+        },
+      ],
+      technologies: [
+        "TensorFlow",
+        "PyTorch",
+        "OpenAI",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+      ],
+      stats: [
+        { number: "50+", label: "AI Projects Delivered" },
+        { number: "95%", label: "Model Accuracy Achieved" },
+        { number: "20+", label: "Industries Served" },
+        { number: "24/7", label: "AI Support" },
+      ],
+    },
+    // ...existing code...
+    "mobile-development": {
+      title: "Mobile Development",
+      description:
+        "Native and cross-platform mobile applications for iOS and Android.",
+      longDescription:
+        "Our Mobile Development services deliver high-quality native and cross-platform apps for iOS and Android. We focus on intuitive UI/UX, robust performance, and seamless integration to ensure your mobile solution stands out in the marketplace.",
+      image:
+        "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      features: [
+        "iOS App Development",
+        "Android App Development",
+        "Cross-Platform Solutions",
+        "Mobile UI/UX Design",
+        "App Store Optimization",
+        "Mobile Backend Services",
+      ],
+      benefits: [
+        "Reach a wider audience on iOS and Android",
+        "Faster time-to-market with cross-platform tools",
+        "Engaging and intuitive user experiences",
+        "Optimized app performance and reliability",
+        "Expert guidance through app store submission",
+        "Scalable and secure mobile backends",
+      ],
+      process: [
+        {
+          step: 1,
+          title: "Requirement Analysis",
+          description:
+            "We gather your business needs and define the app’s core features.",
+        },
+        {
+          step: 2,
+          title: "UI/UX Design",
+          description:
+            "Our designers craft engaging and user-friendly mobile interfaces.",
+        },
+        {
+          step: 3,
+          title: "Development",
+          description:
+            "We build robust mobile apps using the latest native and cross-platform technologies.",
+        },
+        {
+          step: 4,
+          title: "Testing & QA",
+          description:
+            "Comprehensive testing ensures your app is reliable and bug-free.",
+        },
+        {
+          step: 5,
+          title: "Deployment & Launch",
+          description:
+            "We handle app store submissions and ensure a smooth launch.",
+        },
+        {
+          step: 6,
+          title: "Support & Updates",
+          description:
+            "Ongoing support and updates to keep your app competitive.",
+        },
+      ],
+      technologies: [
+        "React Native",
+        "Flutter",
+        "Swift",
+        "Kotlin",
+        "Xamarin",
+        "Ionic",
+      ],
+      stats: [
+        { number: "80+", label: "Mobile Apps Delivered" },
+        { number: "4.8★", label: "Average App Rating" },
+        { number: "20+", label: "Industries Served" },
+        { number: "100K+", label: "App Downloads" },
+      ],
+    },
+    // ...existing code...
+    devops: {
+      title: "DevOps & Infrastructure",
+      description:
+        "Streamlined development operations and robust infrastructure management.",
+      longDescription:
+        "Our DevOps & Infrastructure services help you accelerate software delivery and ensure system reliability. We implement CI/CD pipelines, automate infrastructure, and provide continuous monitoring and optimization for secure, high-performing environments.",
+      image:
+        "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      features: [
+        "CI/CD Pipeline Setup",
+        "Container Orchestration",
+        "Infrastructure as Code",
+        "Monitoring & Logging",
+        "Security Implementation",
+        "Performance Optimization",
+      ],
+      benefits: [
+        "Faster and more reliable deployments",
+        "Automated and consistent infrastructure",
+        "Improved system scalability and resilience",
+        "Enhanced security and compliance",
+        "Proactive monitoring and troubleshooting",
+        "Reduced operational costs",
+      ],
+      process: [
+        {
+          step: 1,
+          title: "Assessment & Planning",
+          description:
+            "We evaluate your current processes and define a DevOps strategy.",
+        },
+        {
+          step: 2,
+          title: "Pipeline & Automation",
+          description:
+            "We set up CI/CD pipelines and automate infrastructure provisioning.",
+        },
+        {
+          step: 3,
+          title: "Containerization & Orchestration",
+          description:
+            "We containerize applications and manage them with orchestration tools.",
+        },
+        {
+          step: 4,
+          title: "Monitoring & Security",
+          description:
+            "We implement monitoring, logging, and security best practices.",
+        },
+        {
+          step: 5,
+          title: "Optimization & Support",
+          description:
+            "Continuous optimization and support for your DevOps environment.",
+        },
+      ],
+      technologies: [
+        "Jenkins",
+        "GitLab CI",
+        "Docker",
+        "Kubernetes",
+        "Ansible",
+        "Prometheus",
+      ],
+      stats: [
+        { number: "150+", label: "Pipelines Deployed" },
+        { number: "99.9%", label: "Deployment Success Rate" },
+        { number: "40%", label: "Faster Release Cycles" },
+        { number: "24/7", label: "Ops Support" },
+      ],
+    },
+    // ...existing code...
   };
 
   const service = serviceData[serviceId as keyof typeof serviceData];

@@ -34,10 +34,11 @@ const ContactPage: React.FC = () => {
 
   const offices = [
     {
-      city: "San Francisco",
-      address: "123 Tech Street, CA 94105",
-      phone: "+1 (555) 123-4567",
-      email: "sf@SelicaTech.com",
+      city: "Bengaluru",
+      address:
+        "46/4, Hosur Rd, Kudlu Gate, Krishna Reddy Industrial Area, H.S, R Extension, 560068",
+      phone: "+91 6363 472 891",
+      email: "contact@selicatech.com",
       hours: "Mon-Fri: 9AM-6PM PST",
     },
     {

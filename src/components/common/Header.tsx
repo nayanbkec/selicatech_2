@@ -15,43 +15,47 @@ const Header: React.FC = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: t('nav.home'), path: '/' },
-    { name: t('nav.about'), path: '/about' },
-    { 
-      name: t('nav.services'), 
-      path: '/services',
+    { name: t("nav.home"), path: "/" },
+    { name: t("nav.about"), path: "/about" },
+    {
+      name: t("nav.services"),
+      path: "/services",
       dropdown: [
-        { name: 'Software Development', path: '/services/software-development' },
-        { name: 'Cloud Solutions', path: '/services/cloud-solutions' },
-        { name: 'AI & Machine Learning', path: '/services/ai-ml' },
-        { name: 'Mobile Development', path: '/services/mobile-development' },
-        { name: 'DevOps & Infrastructure', path: '/services/devops' },
-      ]
+        {
+          name: "Software Development",
+          path: "/services/software-development",
+        },
+        { name: "Cloud Solutions", path: "/services/cloud-solutions" },
+        { name: "AI & Machine Learning", path: "/services/ai-ml" },
+        { name: "Mobile Development", path: "/services/mobile-development" },
+        { name: "DevOps & Infrastructure", path: "/services/devops" },
+      ],
     },
-    { 
-      name: t('nav.solutions'), 
-      path: '/solutions',
-      dropdown: [
-        { name: 'ERP Systems', path: '/solutions/erp' },
-        { name: 'CRM Solutions', path: '/solutions/crm' },
-        { name: 'E-commerce Platforms', path: '/solutions/ecommerce' },
-        { name: 'Healthcare Solutions', path: '/solutions/healthcare' },
-        { name: 'Education Technology', path: '/solutions/education' },
-      ]
-    },
-    { name: t('nav.caseStudies'), path: '/case-studies' },
-    { name: t('nav.blog'), path: '/blog' },
-    { name: t('nav.careers'), path: '/careers' },
-    { name: t('nav.contact'), path: '/contact' },
+    //TODO
+    // {
+    //   name: t("nav.solutions"),
+    //   path: "/solutions",
+    //   dropdown: [
+    //     { name: "ERP Systems", path: "/solutions/erp" },
+    //     { name: "CRM Solutions", path: "/solutions/crm" },
+    //     { name: "E-commerce Platforms", path: "/solutions/ecommerce" },
+    //     { name: "Healthcare Solutions", path: "/solutions/healthcare" },
+    //     { name: "Education Technology", path: "/solutions/education" },
+    //   ],
+    // },
+    // { name: t('nav.caseStudies'), path: '/case-studies' },
+    // { name: t('nav.blog'), path: '/blog' },
+    { name: t("nav.careers"), path: "/careers" },
+    { name: t("nav.contact"), path: "/contact" },
   ];
 
   const languages = [
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
-    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-    { code: 'zh', name: '中文', flag: '🇨🇳' },
-    { code: 'ja', name: '日本語', flag: '🇯🇵' },
+    { code: "en", name: "English", flag: "🇺🇸" },
+    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "fr", name: "Français", flag: "🇫🇷" },
+    { code: "de", name: "Deutsch", flag: "🇩🇪" },
+    { code: "zh", name: "中文", flag: "🇨🇳" },
+    { code: "ja", name: "日本語", flag: "🇯🇵" },
   ];
 
   // Handle scroll effect
@@ -60,8 +64,8 @@ const Header: React.FC = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Close mobile menu on route change
@@ -101,7 +105,7 @@ const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link) => (
               <div key={link.path} className="relative group">
                 {link.dropdown ? (
