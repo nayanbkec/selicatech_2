@@ -20,33 +20,34 @@ const Footer: React.FC = () => {
 
   const footerLinks = {
     company: [
-      { name: 'About Us', path: '/about' },
-      { name: 'Our Team', path: '/about#team' },
-      { name: 'Careers', path: '/careers' },
-      { name: 'News & Press', path: '/blog' },
-      { name: 'Contact', path: '/contact' },
+      { name: "About Us", path: "/about" },
+      { name: "Our Team", path: "/about#team" },
+      { name: "Careers", path: "/careers" },
+      { name: "News & Press", path: "/blog" },
+      { name: "Contact", path: "/contact" },
     ],
     services: [
-      { name: 'Software Development', path: '/services/software-development' },
-      { name: 'Cloud Solutions', path: '/services/cloud-solutions' },
-      { name: 'AI & ML', path: '/services/ai-ml' },
-      { name: 'Mobile Development', path: '/services/mobile-development' },
-      { name: 'DevOps', path: '/services/devops' },
+      { name: "Software Development", path: "/services/software-development" },
+      { name: "Cloud Solutions", path: "/services/cloud-solutions" },
+      { name: "AI & ML", path: "/services/ai-ml" },
+      { name: "Mobile Development", path: "/services/mobile-development" },
+      { name: "DevOps", path: "/services/devops" },
     ],
-    solutions: [
-      { name: 'ERP Systems', path: '/solutions/erp' },
-      { name: 'CRM Solutions', path: '/solutions/crm' },
-      { name: 'E-commerce', path: '/solutions/ecommerce' },
-      { name: 'Healthcare', path: '/solutions/healthcare' },
-      { name: 'Education', path: '/solutions/education' },
-    ],
-    resources: [
-      { name: 'Case Studies', path: '/case-studies' },
-      { name: 'Blog', path: '/blog' },
-      { name: 'Documentation', path: '/docs' },
-      { name: 'Support', path: '/support' },
-      { name: 'Privacy Policy', path: '/privacy' },
-    ],
+    //TODO
+    // solutions: [
+    //   { name: 'ERP Systems', path: '/solutions/erp' },
+    //   { name: 'CRM Solutions', path: '/solutions/crm' },
+    //   { name: 'E-commerce', path: '/solutions/ecommerce' },
+    //   { name: 'Healthcare', path: '/solutions/healthcare' },
+    //   { name: 'Education', path: '/solutions/education' },
+    // ],
+    // resources: [
+    //   { name: 'Case Studies', path: '/case-studies' },
+    //   { name: 'Blog', path: '/blog' },
+    //   { name: 'Documentation', path: '/docs' },
+    //   { name: 'Support', path: '/support' },
+    //   { name: 'Privacy Policy', path: '/privacy' },
+    // ],
   };
 
   const socialLinks = [
@@ -201,10 +202,10 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Solutions Links */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-6">Solutions</h4>
             <ul className="space-y-3">
-              {footerLinks.solutions.map((link) => (
+              {footerLinks?.solutions.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
@@ -219,10 +220,10 @@ const Footer: React.FC = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Resources Links */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-6">
               {t("footer.resources")}
             </h4>
@@ -242,7 +243,7 @@ const Footer: React.FC = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Office Locations */}

@@ -117,7 +117,7 @@ const Header: React.FC = () => {
                     <button
                       className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                         location.pathname.startsWith(link.path)
-                          ? "text-primary-600 bg-primary-50 dark:bg-primary-900/20"
+                          ? "text-[#2252CE] dark:text-white bg-primary-50 dark:bg-primary-900"
                           : isScrolled
                           ? "text-gray-700 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
                           : "text-white hover:text-primary-200"
@@ -134,13 +134,13 @@ const Header: React.FC = () => {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 10 }}
                           transition={{ duration: 0.2 }}
-                          className="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-dark-800 rounded-xl shadow-xl border border-gray-100 dark:border-dark-700 py-2"
+                          className="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-dark-900 rounded-xl shadow-xl border border-gray-100 dark:border-dark-700 py-2"
                         >
                           {link.dropdown.map((item) => (
                             <Link
                               key={item.path}
                               to={item.path}
-                              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:text-primary-600 transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-100 dark:hover:bg-primary-900 hover:text-primary-600 transition-colors"
                             >
                               {item.name}
                             </Link>
@@ -172,7 +172,7 @@ const Header: React.FC = () => {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
             {/* Search */}
-            <button
+            {/* <button
               className={`p-2 rounded-lg transition-colors ${
                 isScrolled
                   ? "text-gray-600 dark:text-gray-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
@@ -180,7 +180,7 @@ const Header: React.FC = () => {
               }`}
             >
               <Search size={20} />
-            </button>
+            </button> */}
 
             {/* Language Switcher */}
             <div className="relative group">

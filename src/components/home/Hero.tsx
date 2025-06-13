@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-dark-900 via-primary-900 to-dark-900">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-hero-pattern opacity-10" />
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {floatingElements.map((element, index) => {
@@ -32,14 +32,14 @@ const Hero: React.FC = () => {
               className={`absolute ${element.position} text-white`}
             >
               <motion.div
-                animate={{ 
+                animate={{
                   y: [0, -20, 0],
-                  rotate: [0, 5, -5, 0]
+                  rotate: [0, 5, -5, 0],
                 }}
-                transition={{ 
+                transition={{
                   duration: 6,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               >
                 <Icon size={64} strokeWidth={1} />
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
 
       {/* Content */}
-      <div className="container mx-auto container-padding relative z-10">
+      <div className="container mx-auto container-padding relative z-10 pt-16 lg:pt-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -67,16 +67,16 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              {t('hero.title')}
+              {t("hero.title")}
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed"
             >
-              {t('hero.subtitle')}
+              {t("hero.subtitle")}
             </motion.p>
 
             <motion.div
@@ -85,16 +85,22 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 mb-12"
             >
-              <Link 
-                to="/contact" 
+              <Link
+                to="/contact"
                 className="btn btn-primary group text-lg px-8 py-4"
               >
-                {t('hero.cta')}
-                <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                {t("hero.cta")}
+                <ArrowRight
+                  size={20}
+                  className="ml-2 group-hover:translate-x-1 transition-transform"
+                />
               </Link>
-              
+
               <button className="btn btn-outline text-lg px-8 py-4 group border-white text-white hover:bg-white hover:text-dark-900">
-                <Play size={20} className="mr-2 group-hover:scale-110 transition-transform" />
+                <Play
+                  size={20}
+                  className="mr-2 group-hover:scale-110 transition-transform"
+                />
                 Watch Demo
               </button>
             </motion.div>
@@ -107,15 +113,21 @@ const Hero: React.FC = () => {
               className="grid grid-cols-3 gap-8"
             >
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-secondary-400 mb-2">500+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-secondary-400 mb-2">
+                  500+
+                </div>
                 <div className="text-sm text-gray-300">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-secondary-400 mb-2">50+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-secondary-400 mb-2">
+                  50+
+                </div>
                 <div className="text-sm text-gray-300">Countries Served</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-secondary-400 mb-2">99%</div>
+                <div className="text-3xl lg:text-4xl font-bold text-secondary-400 mb-2">
+                  99%
+                </div>
                 <div className="text-sm text-gray-300">Client Satisfaction</div>
               </div>
             </motion.div>
@@ -131,41 +143,41 @@ const Hero: React.FC = () => {
             <div className="relative">
               {/* Main Visual Element */}
               <motion.div
-                animate={{ 
+                animate={{
                   rotate: [0, 360],
                 }}
-                transition={{ 
+                transition={{
                   duration: 20,
                   repeat: Infinity,
-                  ease: "linear"
+                  ease: "linear",
                 }}
                 className="w-96 h-96 mx-auto relative"
               >
                 {/* Outer Ring */}
                 <div className="absolute inset-0 rounded-full border-2 border-primary-400/30" />
-                
+
                 {/* Middle Ring */}
                 <motion.div
-                  animate={{ 
+                  animate={{
                     rotate: [360, 0],
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 15,
                     repeat: Infinity,
-                    ease: "linear"
+                    ease: "linear",
                   }}
                   className="absolute inset-8 rounded-full border-2 border-secondary-400/40"
                 />
-                
+
                 {/* Inner Circle */}
                 <motion.div
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.1, 1],
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 4,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                   className="absolute inset-16 rounded-full bg-gradient-to-br from-primary-500/20 to-secondary-500/20 backdrop-blur-sm flex items-center justify-center"
                 >
@@ -188,8 +200,8 @@ const Hero: React.FC = () => {
                     }}
                     className="absolute w-4 h-4 bg-accent-400 rounded-full"
                     style={{
-                      top: '50%',
-                      left: '50%',
+                      top: "50%",
+                      left: "50%",
                       transformOrigin: `${120 + i * 20}px 0px`,
                       transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
                     }}

@@ -434,9 +434,9 @@ const ServiceDetailPage: React.FC = () => {
                 >
                   Get Started
                 </Link>
-                <button className="btn bg-transparent border-2 border-white text-white hover:bg-white/10">
+                {/* <button className="btn bg-transparent border-2 border-white text-white hover:bg-white/10">
                   View Portfolio
-                </button>
+                </button> */}
               </div>
             </div>
             <div>
